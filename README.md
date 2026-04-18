@@ -33,6 +33,12 @@ Negative Control: Conducted a first-difference (percent change) correlation chec
 
 Handling Zero-Inflation & Reporting Gaps.  In "Federal Standard" states (GA, NC) where reporting thresholds are high (500+ employees), I employed Regional Pooling to capture latent signals that are otherwise lost in state-level noise. 
 
+| Metric | Level Analysis | Growth-to-Growth | Aggregated OLS |
+| :--- | :--- | :--- | :--- |
+| **Raw Correlation** | 0.36 | 0.063 | 0.60 |
+| **Findings** | High (Confounded) | Low (Noisy) | **High (Robust)** |
+| **The "Why"** | Driven by COVID trends. | Monthly jitter hides signal. | Quarterly windows reveal the 9-month lag. |
+
 # Strategic Implications for People Analytics
 1.  Talent Recycling: In high-yield states, "People Leaders" should view layoffs as the start of a new talent ecosystem, not just a labor contraction.
 2.  Alternative Data Necessity: The "Invisibility" of the Southern startup engine (low $R^2$ in GA/NC) proves that traditional government data is insufficient for tracking modern labor velocity.
