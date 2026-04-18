@@ -1,7 +1,7 @@
 # warn_entrepreneurship
 
 
-# The Entrepreneurial Lag: Predicting Business Formation via Labor Market ShocksExecutive 
+# The Entrepreneurial Lag: Predicting Business Formation via Labor Market Shocks
 
 # Summary
 Does a layoff today predict a new business tomorrow? This project analyzes the relationship between WARN Act Layoff Notices and High-Propensity Business Applications (BFS) across the US from 2023–2026. While raw correlations suggest a strong link, this study employs OLS Regression and Quarterly Aggregation to reveal a "Geography of Resilience." I found that the "9-month incubation period" for new startups is highly predictable in "Incubator" states like Virginia, but the inverse is true for states like California and Washington.  
