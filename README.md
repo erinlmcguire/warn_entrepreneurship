@@ -7,11 +7,11 @@
 Does a layoff today predict a new business tomorrow? This project analyzes the relationship between WARN Act Layoff Notices and High-Propensity Business Applications (BFS) across the US from 2023–2026. While raw correlations suggest a strong link, this study employs OLS Regression and Quarterly Aggregation to reveal a "Geography of Resilience." I found that the "9-month incubation period" for new startups is highly predictable in "Incubator" states like Virginia, but the inverse is true for states like California and Washington.  
 
 # Key Findings
-The 231% Multiplier: At a national level, every 1,000 layoffs is associated with ~2,313 new business filings nine months later ($p < 0.001$).  This is not causal and additional work needs to be done to identify the causal link between layoffs and new business formation.
+The 231% Multiplier: At a national level, every 1,000 layoffs is associated with ~2,313 new business filings nine months later ($p < 0.001$).  This is not causal and additional work needs to be done to identify the causal link between layoffs and new business formation.  However, significant differences were found across geographies that provide signals about entrepreneurship in these areas.
 
 ## Geographic Divergence: 
 1.  The Incubator (VA): High predictability ($R^2=0.25$). Layoffs are a mechanical leading indicator of growth.
-2.  The Opportunity Hub (GA/NC): Low predictability ($R^2=0.07$). Entrepreneurship is driven by "Opportunity" rather than "Necessity," making traditional layoff data a poor predictor.  The state policies surrounding layoffs also mirror the federal standard, meaning that there are fewer WARN notices unless the scale of the layoffs is large.
+2.  The Opportunity Hub (GA/NC): Low predictability ($R^2=0.07$). Entrepreneurship is driven by "Opportunity" rather than "Necessity," making traditional layoff data a poor predictor.  The state policies surrounding layoffs also mirror the federal standard, meaning that there are fewer WARN notices unless the scale of the layoffs is large.  More data is needed to understand drivers of entrepreneurship in these markets.
 3.  The Volatile Core (CA/WA): Pro-cyclical. Layoffs act as a systemic shock that suppresses business formation rather than catalyzing it.Technical Methodology1. 
 
 # Data Sources
