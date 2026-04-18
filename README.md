@@ -21,8 +21,9 @@ The 231% Multiplier: At a national level, every 1,000 layoffs is associated with
 | **Volatile Core** | California (CA) | -0.97 | 0.03 | Pro-cyclical; shocks suppress formation. |
 
 # Data Sources
-WARN Act Data: Cleaned and standardized regulatory filings (Mass Layoff Notices).Census Bureau BFS: Business Formation Statistics, filtered for "High-Propensity" applications (those likely to hire employees).
-BFS Data: restricted sample to 
+WARN Act Data: Cleaned and standardized regulatory filings (Mass Layoff Notices).
+Census Bureau BFS: Business Formation Statistics, filtered for "High-Propensity" applications (those likely to hire employees).
+
 
 # Analysis Notes
 Initially, a high correlation was observed ($r=0.36$) in DC, but further "Growth-to-Growth" testing (using percent changes) revealed this was an artifact of the COVID-19 recovery period. To find the true signal, I moved to Quarterly Aggregation To "denoise" the temporal jitter of government reporting cycles and restricted sample to the post-COVID period (2023-2026).  
