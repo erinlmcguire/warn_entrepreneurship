@@ -21,6 +21,12 @@ The 231% Multiplier: At a national level, every 1,000 layoffs is associated with
 | **Volatile Core** | California (CA) | -0.97 | 0.03 | Pro-cyclical; shocks suppress formation. |
 
 ![Layoff vs Startup Trends: CA vs VA](ca_vs_va_comparison.png)
+<p align="center">
+  <img src="images/va_line_graph.png" width="45%" />
+  <img src="images/ca_line_graph.png" width="45%" />
+  <br>
+  <em>Figure 1: Comparison of 9-month lagged trends. Note the tight coupling in Virginia's "Incubator" economy versus the divergence in California.</em>
+</p>
 
 # Data Sources
 WARN Act Data: Cleaned and standardized regulatory filings (Mass Layoff Notices).
