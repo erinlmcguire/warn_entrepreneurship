@@ -20,7 +20,7 @@ The 231% Multiplier: At a national level, every 1,000 layoffs is associated with
 | **Opportunity Hub** | Southeast (GA/NC)| 0.96 | 0.07 | Decoupled; growth is organic/non-necessity. |
 | **Volatile Core** | California (CA) | -0.97 | 0.03 | Pro-cyclical; shocks suppress formation. |
 
-![Layoff vs Startup Trends: CA vs VA](images/ca_vs_va_comparison.png)
+![Layoff vs Startup Trends: CA vs VA](ca_vs_va_comparison.png)
 
 # Data Sources
 WARN Act Data: Cleaned and standardized regulatory filings (Mass Layoff Notices).
