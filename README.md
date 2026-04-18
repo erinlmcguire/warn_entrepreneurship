@@ -7,7 +7,16 @@
 Does a layoff today predict a new business tomorrow? This project analyzes the relationship between WARN Act Layoff Notices and High-Propensity Business Applications (BFS) across the US from 2023–2026. While raw correlations suggest a strong link, this study employs OLS Regression and Quarterly Aggregation to reveal a "Geography of Resilience." I found that the "9-month incubation period" for new startups is highly predictable in "Incubator" states like Virginia, but the inverse is true for states like California and Washington.  
 
 # Key Findings
-The 231% Multiplier: At a national level, every 1,000 layoffs is associated with ~2,313 new business filings nine months later ($p < 0.001$).  This is not causal and additional work needs to be done to identify the causal link between layoffs and new business formation.  However, significant differences were found across geographies that provide signals about entrepreneurship in these areas.
+The 231% Multiplier: At a national level, every 1,000 layoffs is associated with ~2,313 new business filings nine months later ($p < 0.001$).  This is not causal and additional work needs to be done to identify the causal link between layoffs and new business formation.  However, significant differences were found across geographies that provide signals about entrepreneurship in these areas.  
+
+## Top States Where Layoffs Predict New Business Formation
+| Rank | State | Multiplier (Apps per Layoff) |
+| :--- | :--- | :--- |
+| 1 | Virginia (VA) | 2.53 |
+| 2 | Missouri (MO) | 1.35 |
+| 3 | Ohio (OH) | 0.80 |
+| 4 | Alabama (AL) | 0.42 |
+| 5 | South Carolina (SC) | 0.38 |
 
 ## Geographic Divergence: 
 1.  The Incubator (VA): High predictability ($R^2=0.25$). Layoffs are a mechanical leading indicator of growth.
@@ -36,7 +45,7 @@ Handling Zero-Inflation & Reporting Gaps.  In "Federal Standard" states (GA, NC)
 | Metric | Level Analysis | Growth-to-Growth | Aggregated OLS |
 | :--- | :--- | :--- | :--- |
 | **Raw Correlation** | 0.36 | 0.063 | 0.60 |
-| **Findings** | High (Confounded) | Low (Noisy) | **High (Robust)** |
+| **Findings** | High (Confounded) | Low (Noisy) | **High** |
 | **The "Why"** | Driven by COVID trends. | Monthly jitter hides signal. | Quarterly windows reveal the 9-month lag. |
 
 # Strategic Implications for People Analytics
