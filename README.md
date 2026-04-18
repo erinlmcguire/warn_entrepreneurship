@@ -30,6 +30,7 @@ The 231% Multiplier: At a national level, every 1,000 layoffs is associated with
 
 # Data Sources
 WARN Act Data: Cleaned and standardized regulatory filings (Mass Layoff Notices).
+
 Census Bureau BFS: Business Formation Statistics, filtered for "High-Propensity" applications (those likely to hire employees).
 
 
