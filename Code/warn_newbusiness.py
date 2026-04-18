@@ -3,12 +3,10 @@
 
 #Load latest WARN notice data from Big Local News
 import pandas as pd
-url = "https://storage.googleapis.com/bln_prod/project/bdc96e51-d30a-4ea7-868b-8db87dc34582/integrated.csv?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=bln-storage%40big-local-news-267923.iam.gserviceaccount.com%2F20260418%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260418T110659Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=5a554d5f4b0f1a8b6cfd51a0b2c9df6eee28799ad00cf24b9e6b866bae65ff9dc4c61e8c5946a146d2fb118591cd8c226d4da37a4faf7a0f67ad4baf02a50035cbe1f53b5948061431432a1f9fbc56adcbf3b56c037a4b24a6f2a164f1674065c63a534d45293f31a6e954b7ec67587c874ef5a4b38578d139f181e7c9d334ef3343eadd2e693ce7d8b92ac6936dd352eee678332b6f7cb737759916abaf1db80b2c6a845bcb3f85293a366157ec536196cc9a469c63c01ca81ccd13f42fd6954d0f3fdff1f99c798b29a9db7b2cc572e15ffbfbe33cc73f874c8ea785ca7de4809eee421c6d1c44f0d7b776c18931a698414c2d8aa5262468744c775c98697e"
-df = pd.read_csv(url, low_memory=False)
-df.to_csv("/Users/erinmcguire/Documents/GItHub/WARN_notices_4182026.csv")
+#url = "https://storage.googleapis.com/bln_prod/project/bdc96e51-d30a-4ea7-868b-8db87dc34582/integrated.csv?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=bln-storage%40big-local-news-267923.iam.gserviceaccount.com%2F20260418%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260418T110659Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=5a554d5f4b0f1a8b6cfd51a0b2c9df6eee28799ad00cf24b9e6b866bae65ff9dc4c61e8c5946a146d2fb118591cd8c226d4da37a4faf7a0f67ad4baf02a50035cbe1f53b5948061431432a1f9fbc56adcbf3b56c037a4b24a6f2a164f1674065c63a534d45293f31a6e954b7ec67587c874ef5a4b38578d139f181e7c9d334ef3343eadd2e693ce7d8b92ac6936dd352eee678332b6f7cb737759916abaf1db80b2c6a845bcb3f85293a366157ec536196cc9a469c63c01ca81ccd13f42fd6954d0f3fdff1f99c798b29a9db7b2cc572e15ffbfbe33cc73f874c8ea785ca7de4809eee421c6d1c44f0d7b776c18931a698414c2d8aa5262468744c775c98697e"
+#df = pd.read_csv(url, low_memory=False)
+df = pd.read_csv("Data/WARN_notices_4182026.csv")
 
-#For future runs - read csv from local drive
-df_warn = pd.read_csv("/Users/erinmcguire/Documents/GItHub/WARN_notices_4182026.csv")
 
 #Company Name Normalization
 #Convert all to lowercase, remove Company, Inc., punctuation, Holdings, Corp
@@ -61,8 +59,8 @@ warn_monthly = df_warn.groupby(['state', 'month_str']).agg(
 print(warn_monthly.head(50))
 
 #Download the BFS Data
-bfs_url = "https://www.census.gov/econ/bfs/csv/bfs_monthly.csv"
-df_bfs = pd.read_csv("/Users/erinmcguire/Documents/GItHub/bfs_monthly.csv")
+#bfs_url = "https://www.census.gov/econ/bfs/csv/bfs_monthly.csv"
+df_bfs = pd.read_csv("Data/bfs_monthly.csv")
 
 # To look at just the most recent "High-Propensity" applications (HBA)
 # This is the series most likely to correlate with layoffs and hiring
@@ -377,4 +375,4 @@ ax2.set_ylabel('') # Share Y or leave blank for clarity
 plt.suptitle('Predictive Power of Layoffs on Entrepreneurship (2023-2026)', fontsize=16, y=1.05)
 plt.tight_layout()
 plt.show()
-plt.savefig('/Users/erinmcguire/Documents/ca_vs_va_comparison.png', dpi=300, bbox_inches='tight')
+plt.savefig('Images/ca_vs_va_comparison.png', dpi=300, bbox_inches='tight')
