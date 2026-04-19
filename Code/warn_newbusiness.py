@@ -225,7 +225,6 @@ for i in range(1, 15):
     correlation = df_stable[f'lag_{i}'].corr(df_stable['new_business_apps'])
     print(f"Correlation at {i} month(s) lag: {correlation:.3f}")
 #highest corr is at 12 months
-
 import numpy as np
 
 # 1. Replace 'inf' with NaN so we can drop them all at once
@@ -276,7 +275,6 @@ print(model.summary())
 
 
 #Which states have higher multipliers?
-import statsmodels.api as sm
 
 def get_state_yield(group):
     # Ensure we have enough quarterly data points for a valid regression
@@ -294,8 +292,6 @@ state_yields = quarterly.groupby('state').apply(get_state_yield).dropna().sort_v
 print("Top 10 States: Highest Multiplier (Business Apps per Layoff)")
 print(state_yields.head(10))
 
-import matplotlib.pyplot as plt
-
 # Plotting the Top 10 Yields
 plt.figure(figsize=(12, 6))
 state_yields.head(10).plot(kind='bar', color='#1a5276')
@@ -311,7 +307,6 @@ print("\nBottom 10 States: Lowest Multiplier")
 print(state_yields.tail(10))
 
 #Get regression results by state to see where beta is higher and where r2 is lower (more random noise probably driving results)
-import statsmodels.api as sm
 
 def get_detailed_metrics(state_code):
     # Filter data for the specific state
@@ -351,7 +346,6 @@ print(f"Southeast Regional Multiplier: {se_reg.params['layoffs_lag3']:.4f}")
 print(f"Southeast Regional R-Squared: {se_reg.rsquared:.4f}")
 
 #plot virginia vs. california to show that one is pro cyclical and the other is counter cyclical
-import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Filter for the two comparison states
