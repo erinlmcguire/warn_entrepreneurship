@@ -37,11 +37,11 @@ Census Bureau BFS: Business Formation Statistics, filtered for "High-Propensity"
 
 
 # Analysis Notes
-* Initially, a high correlation was observed ($r=0.36$) in DC, but further "Growth-to-Growth" testing (using percent changes) revealed this was an artifact of the COVID-19 recovery period. To find the true signal, I moved to Quarterly Aggregation To "denoise" the temporal jitter of government reporting cycles and restricted sample to the post-COVID period (2023-2026).  
+*  Initially, a high correlation was observed ($r=0.36$) in DC, but further "Growth-to-Growth" testing (using percent changes) revealed this was an artifact of the COVID-19 recovery period. To find the true signal, I moved to Quarterly Aggregation To "denoise" the temporal jitter of government reporting cycles and restricted sample to the post-COVID period (2023-2026).  
 
-* OLS Regression was used to analyze the relationship between layoffs and new business formation and observe the strength of the relationship ($R^2$).
+*  OLS Regression was used to analyze the relationship between layoffs and new business formation and observe the strength of the relationship ($R^2$).
 
-* Negative Control: Conducted a first-difference (percent change) correlation check. In DC, growth-to-growth correlation collapsed from 0.36 to 0.063 when detrended, identifying the "COVID-period trend" as a confounding variable and necessitating the pivot to quarterly OLS modeling.  The change in correlation is depicted in the table below.
+*  Negative Control: Conducted a first-difference (percent change) correlation check. In DC, growth-to-growth correlation collapsed from 0.36 to 0.063 when detrended, identifying the "COVID-period trend" as a confounding variable and necessitating the pivot to quarterly OLS modeling.  The change in correlation is depicted in the table below.
 
 | Metric | Level Analysis | Growth-to-Growth | Aggregated OLS |
 | :--- | :--- | :--- | :--- |
@@ -49,7 +49,7 @@ Census Bureau BFS: Business Formation Statistics, filtered for "High-Propensity"
 | **Findings** | High (Confounded) | Low (Noisy) | **High** |
 | **The "Why"** | Driven by COVID trends. | Monthly jitter hides signal. | Quarterly windows reveal the 9-month lag. |
 
-* Handling Zero-Inflation & Reporting Gaps.  In "Federal Standard" states (GA, NC) where reporting thresholds are high (500+ employees), I employed Regional Pooling to capture latent signals that are otherwise lost in state-level noise. 
+*  Handling Zero-Inflation & Reporting Gaps.  In "Federal Standard" states (GA, NC) where reporting thresholds are high (500+ employees), I employed Regional Pooling to capture latent signals that are otherwise lost in state-level noise. 
 
 
 
