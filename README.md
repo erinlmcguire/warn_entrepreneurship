@@ -10,7 +10,7 @@ Does a layoff today predict a new business tomorrow? This project analyzes the r
 National estimate: A 1,000-unit increase in quarterly layoffs is associated with approximately 2,313 additional high-propensity business applications nine months later (β = 2.31, p < 0.001, 95% CI: 1.98-2.64). This association is descriptive — WARN notices are plausibly correlated with unobserved local economic conditions that independently drive formation, and a valid causal estimate would require an instrument or discontinuity design exploiting variation in state WARN thresholds. The more actionable finding is the geographic divergence. 
 
 ## Geographic Divergence: 
-1.  The Incubator (VA): High predictability ($R^2=0.25$). Layoffs are a mechanical leading indicator of growth.
+1.  The Incubator (VA/MD): High predictability ($R^2=0.25$). Layoffs are a mechanical leading indicator of growth.
 2.  The Opportunity Hub (GA/NC): Low predictability ($R^2=0.07$). Entrepreneurship is driven by "Opportunity" rather than "Necessity," making traditional layoff data a poor predictor.  The state policies surrounding layoffs also mirror the federal standard, meaning that there are fewer WARN notices unless the scale of the layoffs is large.  More data is needed to understand drivers of entrepreneurship in these markets.
 3.  The Volatile Core (CA/WA): Pro-cyclical. Layoffs act as a systemic shock that suppresses business formation rather than catalyzing it.
 
